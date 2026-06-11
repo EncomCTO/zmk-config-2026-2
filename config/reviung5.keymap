@@ -14,16 +14,12 @@
         teams_mute: teams_mute {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHFT &kp LGUI>,
-                       <&macro_tap &kp M>,
-                       <&macro_release &kp LSHFT &kp LGUI>;
+            bindings = <&macro_press &kp LSHFT &kp LGUI &macro_tap &kp M &macro_release &kp LSHFT &kp LGUI>;
         };
         teams_cam: teams_cam {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHFT &kp LGUI>,
-                       <&macro_tap &kp O>,
-                       <&macro_release &kp LSHFT &kp LGUI>;
+            bindings = <&macro_press &kp LSHFT &kp LGUI &macro_tap &kp O &macro_release &kp LSHFT &kp LGUI>;
         };
     };
     combos {
